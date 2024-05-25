@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Lane</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Memory Lane</h1>
+        
+        <!-- Question Section -->
+        <div class="question-section">
+            <h2>Answer the questions</h2>
+            <form id="question-form">
+                <div class="question">
+                    <label for="q1">What is your favorite childhood memory?</label>
+                    <textarea id="q1" name="q1" rows="4" cols="50"></textarea>
+                </div>
+                <div class="question">
+                    <label for="q2">Who was your best friend growing up?</label>
+                    <input type="text" id="q2" name="q2">
+                </div>
+                <div class="question">
+                    <label for="q3">What was your favorite toy or game?</label>
+                    <textarea id="q3" name="q3" rows="4" cols="50"></textarea>
+                </div>
+                <div class="question">
+                    <label for="q4">What song reminds you of your childhood?</label>
+                    <input type="text" id="q4" name="q4">
+                </div>
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+        
+        <!-- Image Section -->
+        <div class="image-section">
+            <h2>Your Memories</h2>
+            <img id="memory-image" src="image1.jpg" alt="Memory Image">
+        </div>
+        
+        <!-- Music Section -->
+        <div class="music-section">
+            <h2>Listen to Music</h2>
+            <audio id="memory-audio" controls>
+                <source src="music1.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
